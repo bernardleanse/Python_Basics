@@ -25,3 +25,10 @@ class Printer:
     numbers = Printer.create_ascending_array(number)
     numbers[-1] = Printer.convert_int_to_word(number)
     return ''.join(numbers)
+
+  def print_list(self, num):
+    print(Printer.generate_string_to_print(self, num))
+
+
+ptr = Printer()
+ptr.print_list(7)
