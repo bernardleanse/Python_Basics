@@ -1,6 +1,8 @@
 import unittest
 
+from unique_string import UniqueString
+
 class TestUniqueString(unittest.TestCase):
   def test_returns_string(self):
     ustr = UniqueString()
-    self.assertIsInstance(UniqueString, str)
+    self.assertIsInstance(ustr.get(), str)
